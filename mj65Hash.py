@@ -254,7 +254,7 @@ def main():
 		"one", "one1",
 		"one two"
 	]
-	t1 = "The rain in spain stays mainly on the plane!"
+	t1 = "a"
 	t2 = "b"
 	t3 = "abc"
 	t4 = "Hello world Test of my Hash class!"
