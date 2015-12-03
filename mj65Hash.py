@@ -23,7 +23,7 @@ class mj65Hash:
 	_outputStream = ['=' for x in range(256) ]
 	_recordCheckPrevious = False
 	_recordPreviousDict = {}
-	NUMBER_LOOPS = 10
+	NUMBER_LOOPS = 99
 	SOME_PRIME_NUM = 797
 
 	"""
@@ -100,7 +100,7 @@ class mj65Hash:
 		if len(self._inputStream) == 0:
 			# if _inputStream is empty then give it an initial value
 			self._inputStream = list("@")
-		while len(self._inputStream) < 256:
+		while len(self._inputStream) < 5000:
 			self._inputStream += self._inputStream
 
 	"""
@@ -254,7 +254,7 @@ def main():
 		"one", "one1",
 		"one two"
 	]
-	t1 = "The rain in spain stays mainly on the plane"
+	t1 = "The rain in spain stays mainly on the plane!"
 	t2 = "b"
 	t3 = "abc"
 	t4 = "Hello world Test of my Hash class!"
